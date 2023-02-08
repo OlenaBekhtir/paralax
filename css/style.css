@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;700;900&display=swap');
+
+@font-face {
+    font-family: 'FuturaBoldBT';
+    src: url(..//fonts/FuturaBoldBT.ttf);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1500px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parallax-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallax-section::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateZ(-5000px);
+    background: center/cover no-repeat;
+}
+
+.parallax-section_1::before {
+    background-image: url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax-section_2::before {
+    background-image: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax-section_3::before {
+    background-image: url(../img/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.first-head {
+    height: 596px;
+    background-image: url(../img/firstbackground.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    height: 110px;
+    display: flex;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 30px;
+}
+
+.logo {
+    font-size: 36px;
+    line-height: 36px;
+    color: #424F57;
+    font-weight: 300;
+}
+
+.logo span {
+    text-transform: uppercase;
+    color: #14AFCA;
+    font-weight: 900;
+}
+
+.menu {
+    width: 595px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.word-menu {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3E4C4E;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.75px;
+}
+
+.first-word-menu {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #14AFCA;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.75px;
+}
+
+.text-first-head {
+    font-family: 'FuturaBoldBT';
+    text-transform: uppercase;
+    font-size: 52px;
+    line-height: 75px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-container {
+    text-transform: uppercase;
+    color: #14AFCA;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 40px;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.subhead-container {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    color: #424F57;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.text-container1 {
+    width: 990px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #424F57;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 93px;
+}
+
+.companies {
+    height: 675px;
+    background: url(../img/secondbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.white-triangle1 {
+    width: 0;
+    height: 0;
+    border-left: 49vw solid transparent;
+    border-right: 49vw solid transparent;
+    border-top: 85px solid #FFFFFF;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.bluetext-head {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    color: #14AFCA;
+    text-align: center;
+}
+
+.logo-array {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 100px 100px;
+    grid-row-gap: 120px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.logo2 {
+    width: 225px;
+    height: 99px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-companies-slogan {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 75px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.foto-array {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-for-foto {
+    width: 309px;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #424F57;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slogan {
+    height: 625px;
+    background: url(../img/secondbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white-triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 49vw solid transparent;
+    border-right: 49vw solid transparent;
+    border-top: 85px solid #FFFFFF;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.slogan-text {
+    width: 907px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-style: italic;
+    letter-spacing: 0.8px;
+    color: #D3CCCC;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.author-slogan {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: italic;
+    color: #FFFFFF;
+    letter-spacing: 0.45px;
+    margin-top: 28px;
+    align-self: flex-end;
+    margin-right: 320px;
+    margin-bottom: 35px;
+}
+
+.white-triangle3 {
+    width: 0;
+    height: 0;
+    border-left: 50vw solid transparent;
+    border-bottom: 85px solid #FFFFFF;
+    align-self: flex-end;
+}
+
+.white-triangle4 {
+    width: 0;
+    height: 0;
+    border-right: 50vw solid transparent;
+    border-bottom: 85px solid #FFFFFF;
+    align-self: flex-start;
+    margin-top: -85px;
+}
+
+.text-container3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    letter-spacing: 0.75px;
+    color: #424F57;
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+footer {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #3D3C3C;
+}
+
+footer span {
+    font-weight: 700;
+}
